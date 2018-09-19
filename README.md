@@ -24,7 +24,7 @@ This android application has been tested on android running on 4.2, 4.4, 6.0 and
 # Deployment
 Any android device
 
-# Technologies Used
+# Libraries
 * MVP Pattern
 * TheMoviesDB API
 * Retrofit
