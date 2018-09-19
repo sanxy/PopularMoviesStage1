@@ -26,6 +26,7 @@ Any android device
 
 # Technologies Used
 * MVP Pattern
+* TheMoviesDB API
 * Retrofit
 * ButterKnife
 * Picasso
