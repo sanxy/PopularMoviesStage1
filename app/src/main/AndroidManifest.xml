@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sanxynet.popularmovies">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:fullBackupContent="true"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MovieList"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MovieDetails"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName=".MovieList">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MovieList" />
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="www.google.com" android:scheme="http"
+                    android:pathPrefix="/popularmovies"/>
+            </intent-filter>
+
+        </activity>
+        <activity android:name=".SettingsActivity"
+            android:label="@string/sort"
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".MovieList"/>
+    </application>
+
+</manifest>
