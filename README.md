@@ -1,4 +1,4 @@
-# PopularMovies
+# Popular Movies Stage 1
 Android app that helps user to discover popular movies using api key. This is to fulfil the course for Udacity's Android Developer Nanodegree.
 
 # Features:
