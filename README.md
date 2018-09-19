@@ -24,5 +24,13 @@ This android application has been tested on android running on 4.2, 4.4, 6.0 and
 # Deployment
 Any android device
 
+# Technologies Used
+* MVP Pattern
+* Retrofit
+* ButterKnife
+* Picasso
+* GSON
+* Shimmer Effect
+
 # Authors
 Yusuf Adefolahan
